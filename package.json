@@ -1,11 +1,14 @@
 {
   "name": "emerald-services",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "A thin wrapper around forever for process management of Emerald Services",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
+  "author": "Shane Jonas",
+  "license": "APACHE2",
+  "dependencies": {
+    "caporal": "^0.10.0",
+    "forever": "^0.15.3",
+    "forever-monitor": "^1.7.1",
+    "os-service": "^2.1.3"
+  }
 }
