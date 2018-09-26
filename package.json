@@ -2,9 +2,15 @@
   "name": "emerald-services",
   "version": "0.0.1",
   "description": "A thin wrapper around forever for process management of Emerald Services",
-  "main": "index.js",
+  "main": "service-manager-caporal.js",
   "author": "Shane Jonas",
   "license": "APACHE2",
+  "bin": {
+    "emerald-service": "cli.js"
+  },
+  "scripts": {
+    "start": "node cli.js"
+  },
   "dependencies": {
     "caporal": "^0.10.0",
     "forever": "^0.15.3",

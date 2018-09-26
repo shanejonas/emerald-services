@@ -1,11 +1,6 @@
 const forever = require('forever');
 
 class Services {
-  constructor() {
-    this.state = {
-      services: {}
-    }
-  }
   start(command, options) {
     const child = forever.start([command], options);
     forever.startServer(child);
@@ -23,7 +18,7 @@ class Services {
   }
   list() {
     return forever.list(true, (err, result) => {
-      console.log('result', result);
+      console.log(result);
     });
   }
 }
